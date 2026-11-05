@@ -1,0 +1,49 @@
+{
+  "format": "echomod",
+  "schemaVersion": 1,
+  "id": "public-song-fallback",
+  "name": "付费歌曲续听",
+  "version": "1.0.0",
+  "description": "歌曲不可播放时尝试公开完整同曲或关联 MV 音轨，并在 Windows 上自动核验 MV 歌词。",
+  "author": "CarsonGame",
+  "license": "MIT",
+  "icon": "icon.svg",
+  "kind": "qml-js",
+  "entry": "entry.mjs",
+  "requires": {
+    "hostVersion": ">=0.1.0",
+    "sdkVersion": ">=1.0.0 <2.0.0",
+    "features": [
+      "lifecycle",
+      "operations",
+      "timers",
+      "playback.audioSource",
+      "playback.lyrics",
+      "lyrics.write",
+      "kugou.api",
+      "net.request",
+      "net.downloads",
+      "storage",
+      "files.references",
+      "files.io",
+      "process.launch",
+      "ui.actions",
+      "ui.toast"
+    ]
+  },
+  "capabilities": [
+    "audioSource",
+    "kugouApi",
+    "unrestrictedNetwork",
+    "lyrics",
+    "localFiles",
+    "downloads",
+    "process"
+  ],
+  "contexts": ["main"],
+  "tags": ["音源", "MV", "歌词"],
+  "distribution": {
+    "artifact": "artifacts/public-song-fallback-1.0.0.echomod",
+    "sha256": "7dbce02dc296ca03fac5ea32a457c17f1a7fe9a265ba034c2a3923e73837c2e3"
+  }
+}

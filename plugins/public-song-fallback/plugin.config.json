@@ -1,0 +1,4 @@
+{
+  "entry": "src/entry.ts",
+  "assets": ["icon.svg", "README.md", "LICENSE", "analysis", "bin"]
+}
